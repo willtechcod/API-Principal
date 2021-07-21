@@ -119,13 +119,13 @@ app.post('/cadusuario', async (req, res) => {
 });
 
 /* Rodar a API localmente */
-/*app.listen(8080, function () {
+app.listen(8080, function () {
 console.log("Servidor rodando na porta 8080: http://localhost:8080");
-});*/
+});
 
 /* Rodar a API no servidor da Umbler */
-var port = process.env.PORT || 3000;
+/*var port = process.env.PORT || 3000;
 app.listen(port, function () {
     console.log("Servidor rodando na porta "+ port + ": http://willtechcod-com.umbler.net");
-})
+})*/
 

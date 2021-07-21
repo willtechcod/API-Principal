@@ -7,8 +7,8 @@ const Sequelize = require('sequelize');
 });*/
 
 /*Credenciais do Banco de dados no servidor */
-const sequelize = new Sequelize('orcamento', 'willtech', 'skt245186', {
-  host: 'mysql743.umbler.com',
+const sequelize = new Sequelize('orcamento', 'root', '', {
+  host: 'localhost',
   dialect: 'mysql'
 });
 
