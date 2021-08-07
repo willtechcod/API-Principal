@@ -24,7 +24,7 @@ app.post('/administrativo', function(req, res){
     console.log(email+""+senha);
 });
 
-app.get('/', async (req, res) => {
+app.get('/listar', async (req, res) => {
     await Orcamento.findAll({ order: [['id', 'DESC']] }).then(function (orcamentos) {
         res.json({ orcamentos });
     });
@@ -119,13 +119,13 @@ app.post('/cadusuario', async (req, res) => {
 });
 
 /* Rodar a API localmente */
-app.listen(8080, function () {
-console.log("Servidor rodando na porta 8080: http://localhost:8080");
-});
+/*app.listen(2083, function () {
+console.log("Servidor rodando na porta 2083: http://189.45.192.50:2083");
+});*/
 
 /* Rodar a API no servidor da Umbler */
-/*var port = process.env.PORT || 3000;
+var port = process.env.PORT || 2083;
 app.listen(port, function () {
-    console.log("Servidor rodando na porta "+ port + ": http://willtechcod-com.umbler.net");
-})*/
+    console.log("Servidor rodando na porta "+ port + ": https://willtechcod.com");
+})
 
