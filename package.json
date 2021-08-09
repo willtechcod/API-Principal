@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app"
+    "start": "node app",
+    "build":"react-scripts build"
   },
   "author": "William Pereira",
   "license": "ISC",

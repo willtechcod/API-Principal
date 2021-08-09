@@ -46,7 +46,7 @@ app.get('/visualizar/:id', async (req, res) => {
         });
 });
 
-app.post('/cadastar', async (req, res) => {
+app.post('/cadastrar', async (req, res) => {
 
     
     const resultCad = await Orcamento.create(
@@ -127,6 +127,6 @@ console.log("Servidor rodando na porta 2083: http://189.45.192.50:2083");
 /* Rodar a API no servidor da Umbler */
 var port = process.env.PORT || 2083;
 app.listen(port, function () {
-    console.log("Servidor rodando na porta "+ port + ": https://willtechcod.com");
+    console.log("Servidor rodando na porta "+ port + ": http://192.168.1.2:2083");
 })
 
