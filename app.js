@@ -3,6 +3,7 @@ const cors = require('cors');
 const app = express();
 
 const Orcamento = require('./models/Orcamento');
+const Usuario = require('./models/Usuario');
 
 app.use(express.json());
 
@@ -126,6 +127,6 @@ console.log("Servidor rodando na porta 2083: http://189.45.192.50:2083");
 /* Rodar a API no servidor da Umbler */
 var port = process.env.PORT || 2083;
 app.listen(port, function () {
-    console.log("Servidor rodando na porta "+ port + ": http://api.willtechcod.com");
+    console.log("Servidor rodando na porta "+ port + ": https://willtechcod.com");
 })
 
